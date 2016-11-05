@@ -6,6 +6,6 @@ then
 	echo "Script is already running..."
 else
 	echo "Script is NOT running, starting script..."
-	cd /vagrant/PlexToVera_project
+	cd /opt/PlexToVera
 	python3 ./PlexToVera.py
 fi

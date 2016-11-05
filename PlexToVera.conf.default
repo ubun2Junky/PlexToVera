@@ -1,0 +1,36 @@
+; *** CAUTION *** all token info, username and password fields are stored in clear text. NEVER distribute your version of this INI file. I'm sorry but I haven't
+; *** done any encryption on this file or figured out how to use more secure auth methods. This works and is intended to be used inside your own home.
+;
+
+[GENERAL]
+;DelayTime is the length in seconds between polls to server status
+DelayTime = 5
+
+; Set 10 for DEBUG and 20 for INFO.
+LogLevel = 20
+
+[PLEX]
+;
+; To get your Plex Token, on your server go to the "info" page for any media item in your library,
+;    then hit the "View XML" link. At the end of that URL is a (20 character) long alphanumeric string.
+;
+; In the PlexClient, do not use quotation marks. Spaces are fine.
+PlexServerIP = <PLEXSERVERIPADDRESS>
+PlexServerPort = 32400
+PlexServerToken = <PLEXSERVERTOKEN>
+;
+;To find the Plex Client that you want to monitor, find it's machineidentifier by starting a movie on the client, then running the following URL
+;http://<plexserverip>:32400/status/sessions
+;Search for machineIdentifier copy and paste the identifier on the line below.
+;
+PlexClient = <PLEXCLIENTMACHINEIDENTIFIER>
+
+[VERA]
+; To get your appropriate scene ID, view your /rest/nodes output and search for your scene. Then use the "address" value as your SceneID's below.
+;
+VeraServerIP = <VERAIPADDRESS>
+VeraServerPort = 3480
+PlexMovieOnSceneID = <sceneIDWhenMoviePlays>
+PlexMovieOffSceneID = <sceneIDWhenMovieStops>
+PlexMoviePauseSceneID = <sceneIDWhenMoviePaused>
+DayNightPluginID = <DeviceID_for_day_or_night_app>

@@ -19,8 +19,13 @@ PlexServerIP = <PLEXSERVERIPADDRESS>
 PlexServerPort = 32400
 PlexServerToken = <PLEXSERVERTOKEN>
 ;
-;To find the Plex Client that you want to monitor, find it's machineidentifier by starting a movie on the client, then running the following URL
-;http://<plexserverip>:32400/status/sessions
+;To find the Plex Client that you want to monitor, you will need it's machineidentifier:
+;  1.  Need to get token so we can find the machineidentifier to the client.
+;      - Open your plex server and open an library item.  Select more -> 'get info'
+;      - On the bottom left corner select 'View XML', this will open a new page displaing a lot of info in XML, we are interested in the URL.  Copy the info after 'X-Plex-Token='
+;  2.  Start a movie or tv series on the client you wish to monitor and in your browser type, substitute <plexserverip> and <sessiontoken> with your info.
+;      -  http://<plexserverip>:32400/status/sessions/?X-Plex-Token=<SESSIONTOKEN>
+
 ;Search for machineIdentifier copy and paste the identifier on the line below.
 ;
 PlexClient = <PLEXCLIENTMACHINEIDENTIFIER>

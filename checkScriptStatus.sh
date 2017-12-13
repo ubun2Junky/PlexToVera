@@ -1,7 +1,7 @@
 #!bin/bash
 
 #check if script is already running
-if pidof python3 ./PlexToVera.py > /dev/null
+if pgrep -f 'python3 ./PlexToVera.py' > /dev/null
 then
 	echo "Script is already running..."
 else

@@ -18,7 +18,8 @@ INSTALLATION
 
 - You must have Python installed. (Google it if you need help) This is written for Python 3.4 
 - There is no installation for the script itself. Simply place the files in the following folder /opt/PlexToVera and then schedule a job using cron (or however else you'd like to trigger it). 
-- Make a copy of the PlexToVera.conf.default file and rename it PlexToVera.conf and modify the file to your variables and fire up the script. 
+- Make a copy of the PlexToVera.conf.default file and rename it PlexToVera.conf and modify the file to your variables and fire up the script.
+- Add this line to run as a cron "* * * * *  bash /opt/PlexToVera/checkScriptStatus.sh"
 - The script will continuously run. It is low memory and CPU usage so I just let it be. -The script will fail right now if the Plex Server is stopped. So I have to restart it sometimes.
 
 USAGE

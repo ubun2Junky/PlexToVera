@@ -2,7 +2,7 @@ PlexToVera
 
 First of all, I just want to give credit where credit is due.  Thanks to bsmith993 original PlexToInstean design, I was able to redesign his original app so it would work the Vera.  I am by no means a developer by any stretch of the imagination, so if anyone find a better alternative or code corrections, I'm always open to suggestions.  
 
-Small, standalone Python script that monitors a Plex Server to determine if a specific Plex Client is playing a movie, and will turn Insteon lights up or down based on playback status.
+Small, standalone Python script that monitors a Plex Server to determine if a specific Plex Client is playing a movie, and will turn Vera controlled lights up or down based on playback status.
 
 GOAL
 
@@ -20,7 +20,7 @@ INSTALLATION
 - There is no installation for the script itself. Simply place the files in the following folder /opt/PlexToVera and then schedule a job using cron (or however else you'd like to trigger it). 
 - Make a copy of the PlexToVera.conf.default file and rename it PlexToVera.conf and modify the file to your variables and fire up the script.
 - Add this line to run as a cron "* * * * *  bash /opt/PlexToVera/checkScriptStatus.sh"
-- The script will continuously run. It is low memory and CPU usage so I just let it be. -The script will fail right now if the Plex Server is stopped. So I have to restart it sometimes.
+- The script will continuously run. It is low memory and CPU usage.
 
 USAGE
 

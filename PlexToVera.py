@@ -10,7 +10,7 @@ import json
 #Load configuration file
 config = configparser.ConfigParser()
 config.sections()
-config.read('./PlexToVera.conf')
+config.read('./config/PlexToVera.conf')
 
 # Set up logging
 LogLevel = int(config['GENERAL']['LogLevel'])

@@ -14,7 +14,7 @@ config.read('./PlexToVera.conf')
 
 # Set up logging
 LogLevel = int(config['GENERAL']['LogLevel'])
-logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', filemode='w', filename='./PlexToVera.log', level=LogLevel)
+logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', filemode='w', filename='./log/PlexToVera.log', level=LogLevel)
 
 # General Variables
 DelayTime = int(config['GENERAL']['DelayTime'])
